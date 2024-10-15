@@ -16,10 +16,8 @@ df
 # %%
 sumario_numericas = df.describe()
 sumario_numericas
-
 # %%
 df["nome"].describe()
-
 # %%
 df["idade"].mean()
 
@@ -28,3 +26,4 @@ df["nome"].iloc[-1]
 
 # %%
 df["nome"].tail(1)
+# %%
