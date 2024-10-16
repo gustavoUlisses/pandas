@@ -20,3 +20,20 @@ df_maior = df_customers[condicao]
 df_maior["Name"].iloc[0]
 
 # %%
+condicao = (df_customers["Points"] >= 1000) & (df_customers["Points"] <= 2000)
+df_customers[condicao]
+# %%
+df_customers[["UUID", "Name"]]
+
+# %%
+df_customers.columns
+# %%
+colunas = df_customers.columns.tolist()
+colunas.sort()
+
+df_customers = df_customers[colunas]
+df_customers
+# %%
+df_customers.rename(columns={"Name": "Nome", "Points": "Pontos"})
+
+# %%
