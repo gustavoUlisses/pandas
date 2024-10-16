@@ -5,7 +5,6 @@ df = pd.read_csv("../data/products.csv",
                  sep=";",
                  names=["Id", "Name", "Description"]
                  )
-
 df
 
 # %%
